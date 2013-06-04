@@ -1,0 +1,248 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81E0CBA0-62F7-4DAA-89CC-3E3E5D84065E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>cstari</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>cstari</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>cstari.Core</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SdlDotNet, Version=6.0.0.0, Culture=neutral, PublicKeyToken=26ad4f7e10c61408, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Tao.Sdl, Version=1.2.11.1, Culture=neutral, PublicKeyToken=9c7a200e36c0094e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chemistry\Atom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\CheckBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Container.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Dock.cs" />
+    <Compile Include="chemistry\atoms\EditBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\StaticImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Lable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\ListBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Radio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Scroll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\atoms\Spinner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\captions\DisplayCaption.cs" />
+    <Compile Include="chemistry\captions\DisplayIcon.cs" />
+    <Compile Include="chemistry\Compound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chemistry\DisplaySettings.cs" />
+    <Compile Include="chemistry\menu\BaseMenu.cs" />
+    <Compile Include="chemistry\menu\PopupMenu.cs" />
+    <Compile Include="chemistry\menu\MenuBar.cs" />
+    <Compile Include="chemistry\atoms\Molicule.cs" />
+    <Compile Include="chemistry\Range.cs" />
+    <Compile Include="chips\Atari.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\AudioMixer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\CPU.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\Mapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\MapperFarm.cs" />
+    <Compile Include="chips\mappers\Activision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\CBS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\Commavid.cs" />
+    <Compile Include="chips\mappers\UALimited.cs" />
+    <Compile Include="chips\mappers\TigerVisionExtended.cs" />
+    <Compile Include="chips\mappers\ReversedStandard.cs" />
+    <Compile Include="chips\mappers\FourK.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\Megaboy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\MNetwork.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\ParkerBrothers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\PitfallII.cs" />
+    <Compile Include="chips\mappers\Standard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\SuperChip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\TigerVision.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\mappers\TwoK.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\RIOT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chips\TIA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="Images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="input\Controller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="input\Dummy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="input\Joystick.cs" />
+    <Compile Include="ui\About.cs" />
+    <Compile Include="ui\ConfigureRom.cs" />
+    <Compile Include="ui\Disassembler.cs" />
+    <Compile Include="ui\EmulatorWindow.cs" />
+    <Compile Include="ui\LoadRom.cs" />
+    <Compile Include="ui\Television.cs" />
+    <Compile Include="ui\TiaDebugger.cs" />
+    <Compile Include="utility\Palette.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utility\ProfileManager.cs" />
+    <None Include="images\alerts.png" />
+    <None Include="images\desktop.png" />
+    <None Include="images\icon.png" />
+    <None Include="images\logo.png" />
+    <None Include="images\matrix.png" />
+    <None Include="images\volume.png" />
+    <Content Include="original code\ColorPicker.py" />
+    <Content Include="original code\Control.py" />
+    <Content Include="original code\Debugger.py" />
+    <Content Include="original code\RomTools.py" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

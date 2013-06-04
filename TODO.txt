@@ -1,0 +1,15 @@
+Create Memory Viewer
+Create Snap Shot code
+Create Duplicate Locator
+
+Load GUI Configuration from file
+
+Handle Controller Inputs
+Create a Color Picker window
+Clean up and seperate classes
+
+Make gui dynamic update, rather than forced.
+
+MenuBar is a nightmare, and the way molicules handle it is worse.
+
+Container needs to allow for focus, and event passing
